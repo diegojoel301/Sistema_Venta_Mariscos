@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Detalles_Producto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nicepage.css') }}" media="screen">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Detalles_Producto.css') }}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='js/nicepage.js') }}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.0.7, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Detalles_Producto">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="es"><header class="u-header u-palette-1-light-3" id="sec-f8e6" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1"></div></header>
+    <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_40ac" data-image-width="1280" data-image-height="852">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-center u-container-style u-group u-palette-3-light-1 u-radius-50 u-shape-round u-group-1">
+          <div class="u-container-layout u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-palette-4-base u-icon-1"><img src="images/3514261.png" alt=""></span>
+            <h3 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">DETALLES PRODUCTO</h3>
+            <img class="u-image u-image-default u-preserve-proportions u-image-1" src="{{ url_for('static', filename='images/image.png') }}" alt="" data-image-width="106" data-image-height="134">
+            <div class="u-form u-form-1">
+              <form action="https://forms.nicepagesrv.com/Form/Process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+                <div class="u-form-group u-form-name">
+                  <label for="name-f186" class="u-label">Nombre</label>
+                  <input type="text" id="name-f186" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                </div>
+                <div class="u-form-date u-form-group u-form-group-2">
+                  <label for="date-111e" class="u-label">Fecha de vencimiento</label>
+                  <input type="date" id="date-111e" name="date" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                </div>
+                <div class="u-form-group u-form-group-3">
+                  <label for="text-0729" class="u-label">Categoría del producto</label>
+                  <input type="text" placeholder="" id="text-0729" name="text" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                </div>
+                <div class="u-form-group u-form-group-4">
+                  <label for="text-e951" class="u-label">Proveedor</label>
+                  <input type="text" placeholder="" id="text-e951" name="text-4" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                </div>
+                <div class="u-form-group u-form-group-5">
+                  <label for="text-d2c6" class="u-label">Telefono proveedor</label>
+                  <input type="text" placeholder="" id="text-d2c6" name="text-5" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                </div>
+                <div class="u-form-group u-form-group-6">
+                  <label for="text-0839" class="u-label">Precio compra</label>
+                  <input type="text" id="text-0839" name="text-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                </div>
+                <div class="u-form-group u-form-group-7">
+                  <label for="text-e993" class="u-label">Precio venta</label>
+                  <input type="text" id="text-e993" name="text-2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                </div>
+                <div class="u-form-email u-form-group">
+                  <label for="email-f186" class="u-label">País origen</label>
+                  <input type="email" id="email-f186" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                </div>
+                <div class="u-form-group u-form-group-9">
+                  <label for="text-436c" class="u-label">Cantidad</label>
+                  <input type="text" id="text-436c" name="text-3" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                </div>
+                <div class="u-align-right u-form-group u-form-submit">
+                  <a href="{{ url_for('aniadirproducto') }}" class="u-border-none u-btn u-btn-submit u-button-style u-none u-btn-1">
+                    <br>
+                  </a>
+                  <input type="submit" value="submit" class="u-form-control-hidden">
+                </div>
+                <div class="u-form-send-message u-form-send-success"> Gracias! Tu mensaje ha sido enviado. </div>
+                <div class="u-form-send-error u-form-send-message"> No se puede enviar su mensaje. Por favor, corrija los errores y vuelva a intentarlo. </div>
+                <input type="hidden" value="" name="recaptchaResponse">
+                <input type="hidden" name="formServices" value="1ff519dec1e85438082e5a3ab30b1abd">
+              </form>
+            </div>
+            <a href="{{ url_for('inventario') }}" class="u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">Atrás</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+   
+  
+</body></html>
